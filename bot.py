@@ -1,12 +1,11 @@
 import os
-from openai import OpenAI
+from  openai import OpenAI
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from pptx import Presentation
-
+import os
 BOT_TOKEN = os.getenv("8146516889:AAFbvGE3_Hr2xh-j5IvZmaF9E9y-4jzMxlQ")
 OPENAI_API_KEY = os.getenv("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")
-
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
