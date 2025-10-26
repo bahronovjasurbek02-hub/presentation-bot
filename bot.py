@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 from pptx import Presentation
 
-BOT_TOKEN = os.getenv("8277898307:AAFfT77mpbQN_Gl7taSnM2B9ZeA0QC51Q-o")
+BOT_TOKEN = os.getenv("8146516889:AAFbvGE3_Hr2xh-j5IvZmaF9E9y-4jzMxlQ")
 OPENAI_API_KEY = os.getenv("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")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
@@ -45,3 +45,4 @@ app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, create_presentat
 
 print("✅ Bot ishga tushdi...")
 app.run_polling()
+
