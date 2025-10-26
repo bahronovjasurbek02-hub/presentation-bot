@@ -45,4 +45,3 @@ app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, create_presentat
 
 print("✅ Bot ishga tushdi...")
 app.run_polling()
-
